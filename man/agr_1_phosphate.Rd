@@ -7,7 +7,7 @@
 agr_1_phosphate(p, crop)
 }
 \arguments{
-\item{p}{Phosphorous soil test result.}
+\item{p}{Phosphorous soil test result (lb/acre).}
 
 \item{crop}{\code{corn} or \code{soybean}}
 }

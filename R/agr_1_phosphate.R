@@ -5,7 +5,7 @@
 #' of Kentucky, phosphate fertilizer rates can be calculated for corn and
 #' soybean.
 #'
-#' @param p Phosphorous soil test result.
+#' @param p Phosphorous soil test result (lb/acre).
 #' @param crop `corn` or `soybean`
 #'
 #' @return Amount of P2O5 (lb/ac) to apply.

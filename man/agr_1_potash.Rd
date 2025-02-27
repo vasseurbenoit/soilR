@@ -7,7 +7,7 @@
 agr_1_potash(k, crop)
 }
 \arguments{
-\item{k}{Potash soil test result.}
+\item{k}{Potash soil test result (lb/acre).}
 
 \item{crop}{\code{corn} or \code{soybean}}
 }

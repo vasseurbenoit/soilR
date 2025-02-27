@@ -5,7 +5,7 @@
 #' of Kentucky, potash fertilizer rates can be calculated for corn and
 #' soybean.
 #'
-#' @param k Potash soil test result.
+#' @param k Potash soil test result (lb/acre).
 #' @param crop `corn` or `soybean`
 #'
 #' @return Amount of K2O (lb/ac) to apply.
