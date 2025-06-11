@@ -10,16 +10,22 @@ editor_options:
 ---
 
 ```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>"
-)
-```
-
-```{r setup}
 library(soilR)
 library(tidyverse)
 library(ggtern)
+
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE,
+  dpi = 600,
+  fig.width = 7,
+  fig.height = 4,
+  fig.align = "center",
+  out.width = "100%"
+)
 ```
 
 ```{r texture-triangle-usda}
