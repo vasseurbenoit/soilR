@@ -1,9 +1,9 @@
 #' Calculation of the saturation, field capacity and permanent wilting point
-#' characteristic humidities.
+#' characteristic humidity.
 #'
-#' @param clay_percentage Percentage clay.
-#' @param sand_percentage Percentage sand.
-#' @param organic_carbon_percentage Percentage organic carbon.
+#' @param clay_percentage Clay percentage.
+#' @param sand_percentage Sand percentage.
+#' @param organic_carbon_percentage Organic carbon percentage.
 #' @param bulk_density_g_cm3 Bulk density (g/cm3)
 #'
 #' @description This pedotransfert function comes from Rawls et al (1982),
@@ -35,10 +35,10 @@ p_rawls_1982 <- function(clay_percentage,
 
   # Humidity field capacity (cm3/cm3) ----
   humidity_field_capacity_cm3_cm3 <-
-    0.2391 -
-    0.0019 * sand_percentage +
-    0.0210 * organic_carbon_percentage * parameters[["organic_carbon_to_organic_matter_conversion_factor"]] +
-    0.72 * humidity_permanent_wilting_point_cm3_cm3
+    0.2576 -
+    0.0020 * sand_percentage +
+    0.0036 * clay_percentage +
+    0.0299 * organic_carbon_percentage * parameters[["organic_carbon_to_organic_matter_conversion_factor"]]
 
   # Humidity at saturation (cm3/cm3) ----
   humidity_saturation_cm3_cm3 <-

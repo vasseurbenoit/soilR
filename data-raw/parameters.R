@@ -3,7 +3,8 @@
 
 # Parameters ----
 parameters <- list(
-  "organic_carbon_to_organic_matter_conversion_factor" = 1.72
+  "organic_carbon_to_organic_matter_conversion_factor" = 1.72,
+  "particle_density_g_cm3" = 2.65
 )
 
 

@@ -3,7 +3,7 @@
 \name{p_rawls_1982}
 \alias{p_rawls_1982}
 \title{Calculation of the saturation, field capacity and permanent wilting point
-characteristic humidities.}
+characteristic humidity.}
 \usage{
 p_rawls_1982(
   clay_percentage,
@@ -13,11 +13,11 @@ p_rawls_1982(
 )
 }
 \arguments{
-\item{clay_percentage}{Percentage clay.}
+\item{clay_percentage}{Clay percentage.}
 
-\item{sand_percentage}{Percentage sand.}
+\item{sand_percentage}{Sand percentage.}
 
-\item{organic_carbon_percentage}{Percentage organic carbon.}
+\item{organic_carbon_percentage}{Organic carbon percentage.}
 
 \item{bulk_density_g_cm3}{Bulk density (g/cm3)}
 }

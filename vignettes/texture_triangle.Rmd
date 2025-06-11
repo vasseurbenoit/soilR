@@ -1,0 +1,56 @@
+---
+title: "texture_triangle"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{texture_triangle}
+  %\VignetteEncoding{UTF-8}
+  %\VignetteEngine{knitr::rmarkdown}
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(soilR)
+library(tidyverse)
+library(ggtern)
+```
+
+```{r Y_triangles-de-texture_USDA}
+ggplot(data = TT_USDA, aes(y = argile, x = sable, z = limon, fill = texture)) +
+  coord_tern("x","y", "z") +
+  theme_rgbw() +
+  theme_showsecondary() +
+  theme_showarrows() +
+  custom_percent("(%)") +
+  theme(legend.justification = c(0, 1),
+        legend.position      = c(0, 1)) +
+  labs(#title = "Classification des textures du triangle de l'USDA",
+    fill  = 'Classe',
+    color = 'Classe') +
+  geom_polygon(color = "black") +
+  geom_point(data = TT_USDA %>% group_by(texture) %>% summarise(mZ = mean(limon), mY = mean(argile)), aes(x = 100 - mY - mZ, y = mY, z = mZ), size = 3)
+```
+
+```{r Y_triangles-de-texture_AISNE}
+# ggplot(data = TT_AISNE, aes(y = argile, x = sable, z = limon, fill = texture)) +
+#   coord_tern("x","y", "z") +
+#   theme_rgbw() +
+#   theme_showsecondary() +
+#   theme_showarrows() +
+#   custom_percent("(%)") +
+#   theme(legend.justification = c(0, 1),
+#         legend.position      = c(0, 1),
+#         plot.title.position = "bottom") +
+#   labs(title = "Classification des textures du triangle de l'AISNE",
+#        fill  = 'Classe',
+#        color = 'Classe') +
+#   geom_polygon(color = "black") +
+#   geom_point(data = TT_AISNE %>% group_by(texture) %>% summarise(mZ = mean(limon), mY = mean(argile)), aes(x = 100 - mY - mZ, y = mY, z = mZ))
+```
