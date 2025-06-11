@@ -4,12 +4,10 @@
 \alias{t_soil_texture_identifier}
 \title{Identification of the soil class texture.}
 \usage{
-t_soil_texture_identifier(clay_percentage, silt_percentage, sand_percentage)
+t_soil_texture_identifier(clay_percentage, sand_percentage)
 }
 \arguments{
 \item{clay_percentage}{Measured clay content (\%)}
-
-\item{silt_percentage}{Measured silt content (\%)}
 
 \item{sand_percentage}{Measured sand content (\%)}
 }
@@ -21,6 +19,5 @@ Identification of the soil class texture.
 }
 \examples{
 t_soil_texture_identifier(clay_percentage = 60,
-                          sand_percentage = 20,
-                          silt_percentage = 20)
+                          sand_percentage = 20)
 }

@@ -13,7 +13,7 @@
 #' @export
 #'
 #' @examples
-#' p_baumer_rice_1998(bulk_density_g_cm3 = 1.5,
+#' p_baumer_rice_1988(bulk_density_g_cm3 = 1.5,
 #'                    organic_carbon_percentage = 2)
 p_baumer_rice_1988 <- function(bulk_density_g_cm3,
                                organic_carbon_percentage){

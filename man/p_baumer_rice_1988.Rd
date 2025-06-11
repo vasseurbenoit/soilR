@@ -22,6 +22,6 @@ The function coded here is: porosity = 1 - BD/rho with BD the bulk density
 (g/cm3) and rho the particle density (g/cm3).
 }
 \examples{
-p_baumer_rice_1998(bulk_density_g_cm3 = 1.5,
+p_baumer_rice_1988(bulk_density_g_cm3 = 1.5,
                    organic_carbon_percentage = 2)
 }
