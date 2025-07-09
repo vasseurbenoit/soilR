@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# soilR
+# soilR <img src="man/figures/logo.png" align="right" height="120" alt="" />
 
 <!-- badges: start -->
 [![Codecov test coverage](https://codecov.io/gh/vasseurbenoit/soilR/branch/main/graph/badge.svg)](https://app.codecov.io/gh/vasseurbenoit/soilR?branch=main)
