@@ -19,9 +19,8 @@ knitr::opts_chunk$set(
 # soilR
 
 <!-- badges: start -->
-
-![](man/figures/logo.jpg)
-
+[![Codecov test coverage](https://codecov.io/gh/vasseurbenoit/soilR/branch/main/graph/badge.svg)](https://app.codecov.io/gh/vasseurbenoit/soilR?branch=main)
+[![R-CMD-check](https://github.com/vasseurbenoit/soilR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/vasseurbenoit/soilR/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of soilR is to gather soil equations found in the literature.
